@@ -1,2 +1,5 @@
 Nerve
 =====
+Nerve is a software application for sharing a keyboard and mouse between multiple computers. It is used in situations where several PCs are used together, with a monitor connected to each, but are to be controlled by one user. The user needs only one keyboard and mouse on the desk.
+Once the program is installed, users can move the mouse "off" the side of their desktop on one computer, and the mouse-pointer will appear on the desktop of another computer. Key presses will be delivered to whichever computer the mouse-pointer is located in. This makes it possible to control several machines as easily as if they were a single multi-monitor computer.
+Architecturally, the program is implemented as a server which defines which screen-edges lead to which machines, and one or more clients, which connect to the server to offer the use of their desktops. The keyboard and mouse are connected to the server machine. TCP/IP communications are used to send mouse/keyboard and clipboard events between computers.
